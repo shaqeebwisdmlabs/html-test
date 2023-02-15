@@ -10,9 +10,355 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <script defer src="./js/script.js"></script>
     <title>Book Store</title>
   </head>
-  <body></body>
+  <body>
+    <header class="container | bg-neutral-200">
+      <a class="logo | flex">
+        <img src="./assets/logo.svg" alt="company-logo" />
+        <span class="fs-title fw-black">Book Store</span>
+      </a>
+      <nav class="primary-navigation">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">About Us</a></li>
+          <li><a href="#" class="nav-links">Courses</a></li>
+          <li><a href="#" class="nav-links">Our service</a></li>
+          <li><a href="#" class="nav-links">Contact Us</a></li>
+        </ul>
+        <button class="btn | btn--primary">Sign In</button>
+      </nav>
+    </header>
+    <section class="hero | bg-neutral-200">
+      <div class="hero__body">
+        <h1 class="fs-title-lg fw-black">
+          The <span class="text-secondary-400">Smart</span> Choice For
+          <span class="text-secondary-400">Future</span>
+        </h1>
+        <p>
+          Elearn is a global training provider based across the UK that
+          specialises in accredited and bespoke training courses. We crush the
+          online e-learning platform.
+        </p>
+        <div class="search-location">
+          <div class="search-input">
+            <img src="./assets/magnifying-glass.svg" class="icon" />
+            <input
+              type="text"
+              name="location"
+              id="location-search"
+              placeholder="Search for a location..."
+            />
+          </div>
+          <button class="btn | btn--primary">Continue</button>
+        </div>
+      </div>
+    </section>
+    <section class="features | container flex bg-primary-400 text-neutral-100">
+      <div class="feature">
+        <img src="./assets/skills.png" alt="online-learning" />
+        <h3 class="fw-bold fs-body-lg">Learn The Latest Skills</h3>
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a BC, making it over 2000 years old.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="./assets/career.png" alt="online-learning" />
+        <h3 class="fw-bold fs-body-lg">Get Ready For a Career</h3>
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a BC, making it over 2000 years old.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="./assets/certificate.png" alt="online-learning" />
+        <h3 class="fw-bold fs-body-lg">Earn a Certificate</h3>
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a BC, making it over 2000 years old.
+        </p>
+      </div>
+    </section>
+    <section class="our-courses">
+      <div class="courses__header">
+        <h2 class="fw-bold fs-title">Our Courses</h2>
+        <p>We have courses that will help you to excel in your career</p>
+      </div>
+      <div class="courses">
+        <div class="course">
+          <div class="course__info">
+            <img
+              src="./assets/course-thumbnail-1.png"
+              alt="little-girl-learning-online"
+            />
+            <div class="course__category">
+              <span>UI/UX Design</span>
+              <img src="./assets/ratings.png" alt="" />
+            </div>
+            <p class="fs-body-lg fw-bold">UI/UX Design for Beginners</p>
+            <p class="fs-body-lg fw-bold text-secondary-400">$98</p>
+            <div class="course__metrics">
+              <div>
+                <img src="./assets/clock.svg" alt="" class="icon" />
+                <span>22hr 30min</span>
+              </div>
+              <div>
+                <img src="./assets/video.svg" alt="" class="icon" />
+                <span>Lessons</span>
+              </div>
+              <div>
+                <img src="./assets/download.svg" alt="" class="icon" />
+                <span>Saves</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn | btn--secondary">Join Course</button>
+        </div>
+        <div class="course">
+          <div class="course__info">
+            <img
+              src="./assets/course-thumbnail-2.png"
+              alt="girl-learning-online"
+            />
+            <div class="course__category">
+              <span>UI/UX Design</span>
+              <img src="./assets/ratings.png" alt="" />
+            </div>
+            <p class="fs-body-lg fw-bold">UI/UX Design for Beginners</p>
+            <p class="fs-body-lg fw-bold text-secondary-400">$98</p>
+            <div class="course__metrics">
+              <div>
+                <img src="./assets/clock.svg" alt="" class="icon" />
+                <span>22hr 30min</span>
+              </div>
+              <div>
+                <img src="./assets/video.svg" alt="" class="icon" />
+                <span>Lessons</span>
+              </div>
+              <div>
+                <img src="./assets/download.svg" alt="" class="icon" />
+                <span>Saves</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn | btn--secondary">Join Course</button>
+        </div>
+        <div class="course">
+          <div class="course__info">
+            <img
+              src="./assets/course-thumbnail-3.png"
+              alt="girl-learning-online"
+            />
+            <div class="course__category">
+              <span>UI/UX Design</span>
+              <img src="./assets/ratings.png" alt="" />
+            </div>
+            <p class="fs-body-lg fw-bold">UI/UX Design for Beginners</p>
+            <p class="fs-body-lg fw-bold text-secondary-400">$98</p>
+            <div class="course__metrics">
+              <div>
+                <img src="./assets/clock.svg" alt="" class="icon" />
+                <span>22hr 30min</span>
+              </div>
+              <div>
+                <img src="./assets/video.svg" alt="" class="icon" />
+                <span>Lessons</span>
+              </div>
+              <div>
+                <img src="./assets/download.svg" alt="" class="icon" />
+                <span>Saves</span>
+              </div>
+            </div>
+            <button class="btn | btn--secondary">Join Course</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="premium-learning | bg-neutral-200">
+      <div class="premium-learning__container |container">
+        <div class="premium-learning__illustration">
+          <img
+            src="./assets/learning-experience-illustration.png"
+            alt="a girl working on a laptop"
+          />
+        </div>
+        <div class="premium-learning__info">
+          <h3 class="fs-title fw-black">Premium Leaning Experience</h3>
+          <div class="premium-learning__features">
+            <div class="premium-learning--feature">
+              <div class="feature__icon">
+                <img src="./assets/hearts.png" alt="" />
+              </div>
+              <div class="feature__info">
+                <p class="fw-bold">Easily Accessible</p>
+                <p class="fs-body-sm">
+                  Learning will fell very comffortable with courslab.
+                </p>
+              </div>
+            </div>
+            <div class="premium-learning--feature">
+              <div class="feature__icon">
+                <img src="./assets/jigsaw.png" alt="" />
+              </div>
+              <div class="feature__info">
+                <p class="fw-bold">Fun Learning Experience</p>
+                <p class="fs-body-sm">
+                  Learning will fell very comffortable with courslab.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="testimonial__header">
+        <h2 class="fw-bold fs-title">What Student's Say</h2>
+        <p>Hear what our students are saying after buying courses</p>
+      </div>
+    </section>
+    <section class="our-teachers">
+      <div class="our-teacher__header">
+        <h2 class="fw-bold fs-title">Our Teachers</h2>
+        <p>We provide best teachers from around the globe</p>
+        <div class="teachers | flex">
+          <div class="teacher | box-shadow">
+            <div class="teacher__avatar">
+              <img src="./assets/professor-1.png" alt="" />
+            </div>
+            <p class="fw-bold">Matthew E. McNatt</p>
+            <p class="fw-medium text-neutral-700">
+              Professor @George Brown College
+            </p>
+            <p class="text-neutral-700">
+              Ut enim ad minim veniam, quis nost exercitation ullamco laboris
+              nisi ut allquip ex commodo.
+            </p>
+            <div class="teacher__meta-data">
+              <p class="text-secondary-400">Engineering Physics</p>
+              <div class="teacher__socials">
+                <a href="#"><img src="./assets/instagram.svg" alt="" /></a>
+                <a href="#"><img src="./assets/linkedin.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="teacher | box-shadow">
+            <div class="teacher__avatar">
+              <img src="./assets/professor-2.png" alt="" />
+            </div>
+            <p class="fw-bold">Tracy D. Wright</p>
+            <p class="fw-medium text-neutral-700">
+              Professor @George Brown College
+            </p>
+            <p class="text-neutral-700">
+              Ut enim ad minim veniam, quis nost exercitation ullamco laboris
+              nisi ut allquip ex commodo.
+            </p>
+            <div class="teacher__meta-data">
+              <p class="text-secondary-400">Engineering Physics</p>
+              <div class="teacher__socials">
+                <a href="#"><img src="./assets/instagram.svg" alt="" /></a>
+                <a href="#"><img src="./assets/linkedin.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="teacher | box-shadow">
+            <div class="teacher__avatar">
+              <img src="./assets/professor-3.png" alt="" />
+            </div>
+            <p class="fw-bold">Cynthia A. Nelson</p>
+            <p class="fw-medium text-neutral-700">
+              Professor @George Brown College
+            </p>
+            <p class="text-neutral-700">
+              Ut enim ad minim veniam, quis nost exercitation ullamco laboris
+              nisi ut allquip ex commodo.
+            </p>
+            <div class="teacher__meta-data">
+              <p class="text-secondary-400">Engineering Physics</p>
+              <div class="teacher__socials">
+                <a href="#"><img src="./assets/instagram.svg" alt="" /></a>
+                <a href="#"><img src="./assets/linkedin.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter | container bg-primary-400 text-neutral-100">
+      <h2 class="fw-black fs-title">Subscribe To Our Newsletter</h2>
+      <p>
+        Get latest updates about courses and many more directly into your inbox
+      </p>
+      <div class="newsletter-email">
+        <div class="email-input">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <button class="btn | btn--primary">Send</button>
+      </div>
+    </section>
+    <footer class="bg-neutral-200">
+      <div class="footer__container | container">
+        <div class="footer__comp-info">
+          <a class="logo | flex">
+            <img src="./assets/logo.svg" alt="company-logo" />
+            <span class="fs-title fw-black">Book Store</span>
+          </a>
+          <p class="text-neutral-700">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy a type
+            specimen book.
+          </p>
+        </div>
+        <div class="company-nav | footer__nav gap">
+          <p class="fw-bold">Company</p>
+          <ul class="company__nav-list | gap">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">How to work?</a></li>
+            <li><a href="#">Popular Courses</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+        <div class="courses-nav | footer__nav gap">
+          <p class="fw-bold">Company</p>
+          <ul class="courses__nav-list | gap">
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Online Courses</a></li>
+            <li><a href="#">Video Courses</a></li>
+          </ul>
+        </div>
+        <div class="support-nav | footer__nav gap">
+          <p class="fw-bold">Company</p>
+          <ul class="support__nav-list | gap">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="contact-info | gap">
+          <p class="fw-bold">Contact Info</p>
+          <p class="text-neutral-700">+0913-705-3875</p>
+          <p class="text-neutral-700">ElizabethJ@jourrapide.com</p>
+          <p class="text-neutral-700">
+            4808 Skinner Hollow Road Days Creek, OR 97429
+          </p>
+        </div>
+      </div>
+      <div class="copyright | container">
+        <span class="fs-body-x-sm text-neutral-700"
+          >BookStore All Right Reserved, 2022</span
+        >
+      </div>
+    </footer>
+  </body>
 </html>
