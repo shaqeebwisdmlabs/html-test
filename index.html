@@ -16,21 +16,28 @@
     <title>Book Store</title>
   </head>
   <body>
-    <header class="container | bg-neutral-200">
-      <a class="logo | flex">
-        <img src="./assets/logo.svg" alt="company-logo" />
-        <span class="fs-title fw-black">Book Store</span>
-      </a>
-      <nav class="primary-navigation">
-        <ul class="nav-list">
-          <li><a href="#" class="nav-links">Home</a></li>
-          <li><a href="#" class="nav-links">About Us</a></li>
-          <li><a href="#" class="nav-links">Courses</a></li>
-          <li><a href="#" class="nav-links">Our service</a></li>
-          <li><a href="#" class="nav-links">Contact Us</a></li>
-        </ul>
-        <button class="btn | btn--primary">Sign In</button>
-      </nav>
+    <header class="bg-neutral-200">
+      <div class="header--container | container">
+        <a class="logo | flex">
+          <img src="./assets/logo.svg" alt="company-logo" />
+          <span class="fs-title fw-black">Book Store</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false">
+          <span class="visually-hidden">menu</span>
+          <span class="bar"></span>
+          <span class="cross"></span>
+        </button>
+        <nav class="primary-navigation">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">About Us</a></li>
+            <li><a href="#" class="nav-links">Courses</a></li>
+            <li><a href="#" class="nav-links">Our service</a></li>
+            <li><a href="#" class="nav-links">Contact Us</a></li>
+          </ul>
+          <button class="btn | btn--primary">Sign In</button>
+        </nav>
+      </div>
     </header>
     <section class="hero | bg-neutral-200 padding-block-700">
       <div class="hero--container | container">
@@ -324,9 +331,11 @@
         </div>
       </div>
     </section>
-    <section class="newsletter | container bg-primary-400 text-neutral-100">
+    <section
+      class="newsletter | container bg-primary-400 text-neutral-100 gap-lg"
+    >
       <h2 class="fw-black fs-title">Subscribe To Our Newsletter</h2>
-      <p>
+      <p style="max-width: 40ch">
         Get latest updates about courses and many more directly into your inbox
       </p>
       <div class="newsletter-email">
@@ -338,17 +347,17 @@
             placeholder="Email Address"
           />
         </div>
-        <button class="btn | btn--primary">Send</button>
+        <button class="btn | btn--secondary">Send</button>
       </div>
     </section>
     <footer class="bg-neutral-200">
-      <div class="footer__container | container">
-        <div class="footer__comp-info">
+      <div class="footer--container | container padding-block-700 gap">
+        <div class="footer__comp-info | gap-lg">
           <a class="logo | flex">
             <img src="./assets/logo.svg" alt="company-logo" />
             <span class="fs-title fw-black">Book Store</span>
           </a>
-          <p class="text-neutral-700">
+          <p class="text-neutral-700" style="max-width: 50ch">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy a type
             specimen book.
@@ -356,7 +365,7 @@
         </div>
         <div class="company-nav | footer__nav gap">
           <p class="fw-bold">Company</p>
-          <ul class="company__nav-list | gap">
+          <ul class="company__nav-list | gap-sm">
             <li><a href="#">About Us</a></li>
             <li><a href="#">How to work?</a></li>
             <li><a href="#">Popular Courses</a></li>
@@ -365,7 +374,7 @@
         </div>
         <div class="courses-nav | footer__nav gap">
           <p class="fw-bold">Company</p>
-          <ul class="courses__nav-list | gap">
+          <ul class="courses__nav-list | gap-sm">
             <li><a href="#">Categories</a></li>
             <li><a href="#">Online Courses</a></li>
             <li><a href="#">Video Courses</a></li>
@@ -373,7 +382,7 @@
         </div>
         <div class="support-nav | footer__nav gap">
           <p class="fw-bold">Company</p>
-          <ul class="support__nav-list | gap">
+          <ul class="support__nav-list | gap-sm">
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Help Center</a></li>
             <li><a href="#">Career</a></li>
@@ -389,7 +398,14 @@
           </p>
         </div>
       </div>
-      <div class="copyright | container">
+      <div
+        class="copyright"
+        style="
+          text-align: center;
+          padding: 1em 0;
+          border-top: 1px solid var(--clr-neutral-700);
+        "
+      >
         <span class="fs-body-x-sm text-neutral-700"
           >BookStore All Right Reserved, 2022</span
         >
