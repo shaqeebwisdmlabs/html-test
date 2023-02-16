@@ -148,7 +148,7 @@ select {
 }
 
 .box-shadow {
-  box-shadow: 0px 2px 4px rgba(140, 143, 150, 0.15);
+  box-shadow: 0px 2px 24px hsl(0, 0%, 54%, 0.125);
 }
 
 .gap-sm > * + * {
@@ -276,6 +276,24 @@ select {
 
 .fs-body-x-sm {
   font-size: var(--fs-body-x-sm);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5em 1.5em;
+  border-radius: 100vw;
+}
+
+.btn--primary {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.btn--secondary {
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
 }
 
 body {
