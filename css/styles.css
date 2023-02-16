@@ -581,3 +581,65 @@ body[data-inactive] {
     gap: 2rem;
   }
 }
+
+/* testimonial */
+
+.testimonial__header {
+  text-align: center;
+}
+
+.carousel__track-container {
+  margin: 2em 0;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.carousel__track {
+  position: relative;
+  height: 15.5rem;
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.student-review {
+  flex: 1;
+  padding: 1.5em;
+}
+
+.review-by {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel__nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__indicator {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--clr-neutral-500);
+}
+
+.carousel__indicator.current-slide {
+  width: 2rem;
+  height: 0.75rem;
+  border-radius: 100vw;
+  background-color: var(--clr-primary-400);
+}
