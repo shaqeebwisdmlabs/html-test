@@ -360,7 +360,7 @@ body {
     content: url(../assets/light-bulb.png);
     position: absolute;
     top: -10%;
-    left: -15%;
+    left: -6.25rem;
     transform: scale(0.75);
   }
 
@@ -368,7 +368,7 @@ body {
     content: url(../assets/curly-arrow.svg);
     position: absolute;
     top: -10%;
-    right: -15%;
+    right: -6.25rem;
     transform: scale(0.75);
   }
 }
@@ -504,7 +504,7 @@ body {
   .our-teachers::before {
     content: url(../assets/planet.svg);
     position: absolute;
-    right: -15%;
+    right: -6.25rem;
     top: 0;
     transform: scale(0.75);
   }
@@ -512,7 +512,7 @@ body {
   .our-teachers:after {
     content: "";
     position: absolute;
-    right: -40%;
+    right: -25rem;
     top: -15%;
     width: 20rem;
     aspect-ratio: 1;
@@ -706,7 +706,7 @@ body {
   .testimonial::before {
     content: url(../assets/curly-arrow.svg);
     position: absolute;
-    left: -15%;
+    left: -6.25rem;
     bottom: 0;
     transform: rotate(180deg) scale(0.75);
   }
@@ -715,7 +715,7 @@ body {
     content: "";
     position: absolute;
     z-index: -1;
-    left: -40%;
+    left: -25rem;
     bottom: -15%;
     width: 20rem;
     aspect-ratio: 1;
