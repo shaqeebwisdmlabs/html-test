@@ -2,6 +2,10 @@ body[data-inactive] {
   overflow: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* header */
 
 .logo {
@@ -339,6 +343,10 @@ body[data-inactive] {
 }
 
 @media screen and (width>=50em) {
+  .our-courses {
+    position: relative;
+  }
+
   .courses {
     flex-direction: row;
     gap: 1rem;
@@ -346,6 +354,22 @@ body[data-inactive] {
 
   .course__thumbnail {
     height: 12rem;
+  }
+
+  .our-courses::before {
+    content: url(../assets/light-bulb.png);
+    position: absolute;
+    top: -10%;
+    left: -15%;
+    transform: scale(0.75);
+  }
+
+  .our-courses::after {
+    content: url(../assets/curly-arrow.svg);
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    transform: scale(0.75);
   }
 }
 
@@ -471,6 +495,33 @@ body[data-inactive] {
   .teacher__avatar {
     height: 12rem;
   }
+
+  .our-teachers {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .our-teachers::before {
+    content: url(../assets/planet.svg);
+    position: absolute;
+    right: -15%;
+    top: 0;
+    transform: scale(0.75);
+  }
+
+  .our-teachers:after {
+    content: "";
+    position: absolute;
+    right: -40%;
+    top: -15%;
+    width: 20rem;
+    aspect-ratio: 1;
+    transform: scale(1.25);
+    filter: blur(100px);
+    opacity: 0.25;
+    border-radius: 50%;
+    background-color: var(--clr-secondary-400);
+  }
 }
 
 /* newsletter */
@@ -545,6 +596,7 @@ body[data-inactive] {
     position: absolute;
     left: -50%;
     bottom: -200%;
+    transform: scale(0.75);
   }
 
   .newsletter-email::after {
@@ -552,6 +604,7 @@ body[data-inactive] {
     position: absolute;
     right: -50%;
     bottom: -125%;
+    transform: scale(0.75);
   }
 }
 
@@ -642,4 +695,34 @@ body[data-inactive] {
   height: 0.75rem;
   border-radius: 100vw;
   background-color: var(--clr-primary-400);
+}
+
+@media screen and (width>=55em) {
+  .testimonial {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .testimonial::before {
+    content: url(../assets/curly-arrow.svg);
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+    transform: rotate(180deg) scale(0.75);
+  }
+
+  .testimonial::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -40%;
+    bottom: -15%;
+    width: 20rem;
+    aspect-ratio: 1;
+    transform: scale(1.25);
+    filter: blur(100px);
+    opacity: 0.25;
+    border-radius: 50%;
+    background-color: var(--clr-secondary-400);
+  }
 }
